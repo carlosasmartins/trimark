@@ -21,3 +21,17 @@ A simple enough application that just trims one video!
 
 https://github.com/carlosasmartins/trimark/assets/6072464/57957e80-f674-40f5-878c-1ce8d7304335
 
+### How about that code, how do I navigate it?
+
+It alls starts at `AppDelegate`.
+
+Then a `Home` scene is instantiated by usage of a `AppCoordinator`.
+In that `Home` you have a `Home+ViewController` and a `Home+ViewModel`.
+The `ViewModel` is very simplified _(a lot more could be on it)_.
+
+You also have some components.
+A `VideoPlayer` abstracting away playback logic, listening to events...
+  The `VideoPlayer` also has some tools like a `ThumbnailGenerator` and a `VideoExporter`. It also has `Watermarking` logic.
+A `TrimmingView` that contains all the UI related to controlling the playback edges, scrubbing in the UI...
+
+And you also have some unit tests.
