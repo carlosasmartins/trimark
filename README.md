@@ -1,2 +1,2 @@
 # trimark
-Trimark: Trimming &amp; Watermarking
+Trimark: Trimming & Watermarking

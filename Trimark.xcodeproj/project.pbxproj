@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0726B3602A0D68DC00E1025E /* VideoPlayer.Watermarking+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726B35F2A0D68DC00E1025E /* VideoPlayer.Watermarking+View.swift */; };
+		0726B3682A0D728800E1025E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726B3672A0D728800E1025E /* HomeViewModelTests.swift */; };
+		0726B3712A0D744D00E1025E /* HomeViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726B3702A0D744D00E1025E /* HomeViewModelDelegateMock.swift */; };
+		0726B3752A0D77C600E1025E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0726B3742A0D77C600E1025E /* video.mp4 */; };
+		07454C702A0D9E590038B0AB /* watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = 07454C6F2A0D9E590038B0AB /* watermark.png */; };
+		076A27EC2A097CAC00EB0C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A27EB2A097CAC00EB0C7C /* AppDelegate.swift */; };
+		076A27F02A097CAC00EB0C7C /* Home+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A27EF2A097CAC00EB0C7C /* Home+ViewController.swift */; };
+		076A27F52A097CAE00EB0C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076A27F42A097CAE00EB0C7C /* Assets.xcassets */; };
+		076A27F82A097CAE00EB0C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076A27F62A097CAE00EB0C7C /* LaunchScreen.storyboard */; };
+		076A28022A097DD400EB0C7C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28012A097DD400EB0C7C /* AppCoordinator.swift */; };
+		076A28072A09876100EB0C7C /* Home.ViewController+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28062A09876100EB0C7C /* Home.ViewController+Configuration.swift */; };
+		076A28092A09878800EB0C7C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28082A09878800EB0C7C /* Home.swift */; };
+		076A280B2A0987BA00EB0C7C /* Home+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A280A2A0987BA00EB0C7C /* Home+ViewModel.swift */; };
+		076A280F2A098ABA00EB0C7C /* Home.ViewController+ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A280E2A098ABA00EB0C7C /* Home.ViewController+ViewModelDelegate.swift */; };
+		076A28122A09926B00EB0C7C /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28112A09926B00EB0C7C /* VideoPlayer.swift */; };
+		076A28142A099A8200EB0C7C /* VideoPlayer+PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28132A099A8200EB0C7C /* VideoPlayer+PlayerView.swift */; };
+		076A28182A0AB45D00EB0C7C /* VideoPlayer+ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28172A0AB45D00EB0C7C /* VideoPlayer+ThumbnailGenerator.swift */; };
+		076A281B2A0ABE2400EB0C7C /* TrimmingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A281A2A0ABE2400EB0C7C /* TrimmingView.swift */; };
+		076A281D2A0ACF0F00EB0C7C /* Home.ViewController+TrimmingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A281C2A0ACF0F00EB0C7C /* Home.ViewController+TrimmingViewDelegate.swift */; };
+		076A281F2A0AF29300EB0C7C /* Home.ViewController+VideoPlayerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A281E2A0AF29300EB0C7C /* Home.ViewController+VideoPlayerEvents.swift */; };
+		076A28212A0B0EFA00EB0C7C /* DateFormatterTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28202A0B0EFA00EB0C7C /* DateFormatterTool.swift */; };
+		076A28232A0C1CB200EB0C7C /* TrimmingView+Layouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28222A0C1CB200EB0C7C /* TrimmingView+Layouting.swift */; };
+		076A28252A0C1CC200EB0C7C /* TrimmingView+TrimControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28242A0C1CC200EB0C7C /* TrimmingView+TrimControl.swift */; };
+		076A28282A0C25FE00EB0C7C /* VideoPlayer+Watermarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28272A0C25FE00EB0C7C /* VideoPlayer+Watermarking.swift */; };
+		076A282A2A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 076A28292A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal */; };
+		076A28542A0C5CC600EB0C7C /* VideoPlayer.Watermarking+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28532A0C5CC600EB0C7C /* VideoPlayer.Watermarking+Render.swift */; };
+		076A28582A0C651600EB0C7C /* VideoPlayer+VideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A28572A0C651600EB0C7C /* VideoPlayer+VideoExporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0726B3692A0D728800E1025E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076A27E02A097CAC00EB0C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 076A27E72A097CAC00EB0C7C;
+			remoteInfo = Trimark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0726B35F2A0D68DC00E1025E /* VideoPlayer.Watermarking+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer.Watermarking+View.swift"; sourceTree = "<group>"; };
+		0726B3652A0D728800E1025E /* TrimarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0726B3672A0D728800E1025E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		0726B3702A0D744D00E1025E /* HomeViewModelDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegateMock.swift; sourceTree = "<group>"; };
+		0726B3742A0D77C600E1025E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		07454C6F2A0D9E590038B0AB /* watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watermark.png; sourceTree = "<group>"; };
+		076A27E82A097CAC00EB0C7C /* Trimark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trimark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		076A27EB2A097CAC00EB0C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		076A27EF2A097CAC00EB0C7C /* Home+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+ViewController.swift"; sourceTree = "<group>"; };
+		076A27F42A097CAE00EB0C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		076A27F72A097CAE00EB0C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		076A27F92A097CAE00EB0C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076A28012A097DD400EB0C7C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		076A28062A09876100EB0C7C /* Home.ViewController+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home.ViewController+Configuration.swift"; sourceTree = "<group>"; };
+		076A28082A09878800EB0C7C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		076A280A2A0987BA00EB0C7C /* Home+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+ViewModel.swift"; sourceTree = "<group>"; };
+		076A280E2A098ABA00EB0C7C /* Home.ViewController+ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home.ViewController+ViewModelDelegate.swift"; sourceTree = "<group>"; };
+		076A28112A09926B00EB0C7C /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		076A28132A099A8200EB0C7C /* VideoPlayer+PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer+PlayerView.swift"; sourceTree = "<group>"; };
+		076A28172A0AB45D00EB0C7C /* VideoPlayer+ThumbnailGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer+ThumbnailGenerator.swift"; sourceTree = "<group>"; };
+		076A281A2A0ABE2400EB0C7C /* TrimmingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingView.swift; sourceTree = "<group>"; };
+		076A281C2A0ACF0F00EB0C7C /* Home.ViewController+TrimmingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home.ViewController+TrimmingViewDelegate.swift"; sourceTree = "<group>"; };
+		076A281E2A0AF29300EB0C7C /* Home.ViewController+VideoPlayerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home.ViewController+VideoPlayerEvents.swift"; sourceTree = "<group>"; };
+		076A28202A0B0EFA00EB0C7C /* DateFormatterTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTool.swift; sourceTree = "<group>"; };
+		076A28222A0C1CB200EB0C7C /* TrimmingView+Layouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrimmingView+Layouting.swift"; sourceTree = "<group>"; };
+		076A28242A0C1CC200EB0C7C /* TrimmingView+TrimControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrimmingView+TrimControl.swift"; sourceTree = "<group>"; };
+		076A28272A0C25FE00EB0C7C /* VideoPlayer+Watermarking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer+Watermarking.swift"; sourceTree = "<group>"; };
+		076A28292A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = "VideoPlayer.Watermarking+MetalShaders.metal"; sourceTree = "<group>"; };
+		076A28532A0C5CC600EB0C7C /* VideoPlayer.Watermarking+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer.Watermarking+Render.swift"; sourceTree = "<group>"; };
+		076A28572A0C651600EB0C7C /* VideoPlayer+VideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer+VideoExporter.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0726B3622A0D728800E1025E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076A27E52A097CAC00EB0C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0726B3662A0D728800E1025E /* TrimarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0726B36F2A0D743F00E1025E /* Mocks */,
+				0726B36E2A0D743900E1025E /* Tests */,
+			);
+			path = TrimarkTests;
+			sourceTree = "<group>";
+		};
+		0726B36E2A0D743900E1025E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0726B3672A0D728800E1025E /* HomeViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0726B36F2A0D743F00E1025E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0726B3702A0D744D00E1025E /* HomeViewModelDelegateMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		076A27DF2A097CAC00EB0C7C = {
+			isa = PBXGroup;
+			children = (
+				076A27EA2A097CAC00EB0C7C /* Trimark */,
+				0726B3662A0D728800E1025E /* TrimarkTests */,
+				076A27E92A097CAC00EB0C7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		076A27E92A097CAC00EB0C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				076A27E82A097CAC00EB0C7C /* Trimark.app */,
+				0726B3652A0D728800E1025E /* TrimarkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		076A27EA2A097CAC00EB0C7C /* Trimark */ = {
+			isa = PBXGroup;
+			children = (
+				076A27EB2A097CAC00EB0C7C /* AppDelegate.swift */,
+				076A28262A0C25D300EB0C7C /* Tools */,
+				076A28052A097F0C00EB0C7C /* Components */,
+				076A27FF2A097D9900EB0C7C /* Scenes */,
+				076A28042A097EDB00EB0C7C /* Resources */,
+				076A27F92A097CAE00EB0C7C /* Info.plist */,
+			);
+			path = Trimark;
+			sourceTree = "<group>";
+		};
+		076A27FF2A097D9900EB0C7C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				076A28032A097E9F00EB0C7C /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		076A28002A097DA300EB0C7C /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				076A28012A097DD400EB0C7C /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		076A28032A097E9F00EB0C7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				076A28082A09878800EB0C7C /* Home.swift */,
+				076A280D2A098A9300EB0C7C /* ViewModel */,
+				076A280C2A098A8A00EB0C7C /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		076A28042A097EDB00EB0C7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0726B3742A0D77C600E1025E /* video.mp4 */,
+				076A27F42A097CAE00EB0C7C /* Assets.xcassets */,
+				07454C6F2A0D9E590038B0AB /* watermark.png */,
+				076A27F62A097CAE00EB0C7C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		076A28052A097F0C00EB0C7C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				076A28522A0C5A3200EB0C7C /* MetalRenderer */,
+				076A28002A097DA300EB0C7C /* AppCoordinator */,
+				076A28102A09926000EB0C7C /* VideoPlayer */,
+				076A28192A0ABE0700EB0C7C /* TrimmingView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		076A280C2A098A8A00EB0C7C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				076A27EF2A097CAC00EB0C7C /* Home+ViewController.swift */,
+				076A280E2A098ABA00EB0C7C /* Home.ViewController+ViewModelDelegate.swift */,
+				076A28062A09876100EB0C7C /* Home.ViewController+Configuration.swift */,
+				076A281E2A0AF29300EB0C7C /* Home.ViewController+VideoPlayerEvents.swift */,
+				076A281C2A0ACF0F00EB0C7C /* Home.ViewController+TrimmingViewDelegate.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		076A280D2A098A9300EB0C7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				076A280A2A0987BA00EB0C7C /* Home+ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		076A28102A09926000EB0C7C /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				076A28112A09926B00EB0C7C /* VideoPlayer.swift */,
+				076A28572A0C651600EB0C7C /* VideoPlayer+VideoExporter.swift */,
+				076A28172A0AB45D00EB0C7C /* VideoPlayer+ThumbnailGenerator.swift */,
+				076A28132A099A8200EB0C7C /* VideoPlayer+PlayerView.swift */,
+				076A282B2A0C267900EB0C7C /* Watermarking */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		076A28192A0ABE0700EB0C7C /* TrimmingView */ = {
+			isa = PBXGroup;
+			children = (
+				076A281A2A0ABE2400EB0C7C /* TrimmingView.swift */,
+				076A28242A0C1CC200EB0C7C /* TrimmingView+TrimControl.swift */,
+				076A28222A0C1CB200EB0C7C /* TrimmingView+Layouting.swift */,
+			);
+			path = TrimmingView;
+			sourceTree = "<group>";
+		};
+		076A28262A0C25D300EB0C7C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				076A28202A0B0EFA00EB0C7C /* DateFormatterTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		076A282B2A0C267900EB0C7C /* Watermarking */ = {
+			isa = PBXGroup;
+			children = (
+				076A28272A0C25FE00EB0C7C /* VideoPlayer+Watermarking.swift */,
+				0726B35F2A0D68DC00E1025E /* VideoPlayer.Watermarking+View.swift */,
+				076A28532A0C5CC600EB0C7C /* VideoPlayer.Watermarking+Render.swift */,
+				076A28292A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal */,
+			);
+			path = Watermarking;
+			sourceTree = "<group>";
+		};
+		076A28522A0C5A3200EB0C7C /* MetalRenderer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MetalRenderer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0726B3642A0D728800E1025E /* TrimarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0726B36B2A0D728800E1025E /* Build configuration list for PBXNativeTarget "TrimarkTests" */;
+			buildPhases = (
+				0726B3612A0D728800E1025E /* Sources */,
+				0726B3622A0D728800E1025E /* Frameworks */,
+				0726B3632A0D728800E1025E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0726B36A2A0D728800E1025E /* PBXTargetDependency */,
+			);
+			name = TrimarkTests;
+			productName = TrimarkTests;
+			productReference = 0726B3652A0D728800E1025E /* TrimarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		076A27E72A097CAC00EB0C7C /* Trimark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 076A27FC2A097CAE00EB0C7C /* Build configuration list for PBXNativeTarget "Trimark" */;
+			buildPhases = (
+				076A27E42A097CAC00EB0C7C /* Sources */,
+				076A27E52A097CAC00EB0C7C /* Frameworks */,
+				076A27E62A097CAC00EB0C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trimark;
+			productName = Trimark;
+			productReference = 076A27E82A097CAC00EB0C7C /* Trimark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		076A27E02A097CAC00EB0C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0726B3642A0D728800E1025E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 076A27E72A097CAC00EB0C7C;
+					};
+					076A27E72A097CAC00EB0C7C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 076A27E32A097CAC00EB0C7C /* Build configuration list for PBXProject "Trimark" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 076A27DF2A097CAC00EB0C7C;
+			productRefGroup = 076A27E92A097CAC00EB0C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				076A27E72A097CAC00EB0C7C /* Trimark */,
+				0726B3642A0D728800E1025E /* TrimarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0726B3632A0D728800E1025E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076A27E62A097CAC00EB0C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076A27F82A097CAE00EB0C7C /* LaunchScreen.storyboard in Resources */,
+				076A27F52A097CAE00EB0C7C /* Assets.xcassets in Resources */,
+				07454C702A0D9E590038B0AB /* watermark.png in Resources */,
+				0726B3752A0D77C600E1025E /* video.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0726B3612A0D728800E1025E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0726B3712A0D744D00E1025E /* HomeViewModelDelegateMock.swift in Sources */,
+				0726B3682A0D728800E1025E /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076A27E42A097CAC00EB0C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076A28122A09926B00EB0C7C /* VideoPlayer.swift in Sources */,
+				076A28232A0C1CB200EB0C7C /* TrimmingView+Layouting.swift in Sources */,
+				076A28182A0AB45D00EB0C7C /* VideoPlayer+ThumbnailGenerator.swift in Sources */,
+				0726B3602A0D68DC00E1025E /* VideoPlayer.Watermarking+View.swift in Sources */,
+				076A28252A0C1CC200EB0C7C /* TrimmingView+TrimControl.swift in Sources */,
+				076A28072A09876100EB0C7C /* Home.ViewController+Configuration.swift in Sources */,
+				076A28022A097DD400EB0C7C /* AppCoordinator.swift in Sources */,
+				076A28092A09878800EB0C7C /* Home.swift in Sources */,
+				076A280F2A098ABA00EB0C7C /* Home.ViewController+ViewModelDelegate.swift in Sources */,
+				076A28212A0B0EFA00EB0C7C /* DateFormatterTool.swift in Sources */,
+				076A28282A0C25FE00EB0C7C /* VideoPlayer+Watermarking.swift in Sources */,
+				076A281F2A0AF29300EB0C7C /* Home.ViewController+VideoPlayerEvents.swift in Sources */,
+				076A282A2A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal in Sources */,
+				076A27F02A097CAC00EB0C7C /* Home+ViewController.swift in Sources */,
+				076A28582A0C651600EB0C7C /* VideoPlayer+VideoExporter.swift in Sources */,
+				076A28542A0C5CC600EB0C7C /* VideoPlayer.Watermarking+Render.swift in Sources */,
+				076A281D2A0ACF0F00EB0C7C /* Home.ViewController+TrimmingViewDelegate.swift in Sources */,
+				076A28142A099A8200EB0C7C /* VideoPlayer+PlayerView.swift in Sources */,
+				076A281B2A0ABE2400EB0C7C /* TrimmingView.swift in Sources */,
+				076A27EC2A097CAC00EB0C7C /* AppDelegate.swift in Sources */,
+				076A280B2A0987BA00EB0C7C /* Home+ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0726B36A2A0D728800E1025E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 076A27E72A097CAC00EB0C7C /* Trimark */;
+			targetProxy = 0726B3692A0D728800E1025E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		076A27F62A097CAE00EB0C7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				076A27F72A097CAE00EB0C7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0726B36C2A0D728800E1025E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUSQUZ8LEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.carlos.trimark.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trimark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trimark";
+			};
+			name = Debug;
+		};
+		0726B36D2A0D728800E1025E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUSQUZ8LEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.carlos.trimark.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trimark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trimark";
+			};
+			name = Release;
+		};
+		076A27FA2A097CAE00EB0C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		076A27FB2A097CAE00EB0C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		076A27FD2A097CAE00EB0C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUSQUZ8LEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trimark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Trimark;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.carlos.trimark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		076A27FE2A097CAE00EB0C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUSQUZ8LEU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trimark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Trimark;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.carlos.trimark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0726B36B2A0D728800E1025E /* Build configuration list for PBXNativeTarget "TrimarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0726B36C2A0D728800E1025E /* Debug */,
+				0726B36D2A0D728800E1025E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		076A27E32A097CAC00EB0C7C /* Build configuration list for PBXProject "Trimark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076A27FA2A097CAE00EB0C7C /* Debug */,
+				076A27FB2A097CAE00EB0C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		076A27FC2A097CAE00EB0C7C /* Build configuration list for PBXNativeTarget "Trimark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076A27FD2A097CAE00EB0C7C /* Debug */,
+				076A27FE2A097CAE00EB0C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 076A27E02A097CAC00EB0C7C /* Project object */;
+}
