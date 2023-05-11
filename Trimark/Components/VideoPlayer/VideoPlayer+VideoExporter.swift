@@ -13,7 +13,7 @@ extension VideoPlayer {
     enum VideoExporter {
         /// Exports the trimmed video *without watermarking* 💔
         ///
-        /// Tried multiple ways  to export with watermarking using things like `AVComposition` and `AVVideoCompositionCoreAnimationTool`.
+        /// Tried multiple ways to export with watermarking using things like `AVComposition` and `AVVideoCompositionCoreAnimationTool`.
         /// I quickly realised that I was not going anywhere with just that. 😅
         ///
         /// I figure that the best path forward would be to use `AVAssetWritter` and start adding the texture byte data. This would be probably
@@ -25,9 +25,9 @@ extension VideoPlayer {
         /// audio track.
         ///
         /// The simpler approach would be to just record the `UIView` where all of this happens, however the original video size can be quite larger than whatever
-        /// is rendered in a given `UIView`.
+        /// is rendered in a given `UIView`. That would be just an hack.
         ///
-        /// No easy way out other than simply exporting the video in its original form, with the trimmed start and end. Maybe one day I'll do it. 👀
+        /// No easy way out other than simply exporting the video in its original form, with the trimmed start and end.
         static func exportVideo(
             player: AVPlayer?,
             playerView: UIView,
