@@ -198,7 +198,7 @@ extension TrimmingView {
     // MARK: - Gestures
     private func setupGestures() {
         // Scrubbing gesture on the horizontal stack
-        horizontalStack.addGestureRecognizer(currentTimeControlPanGesture)
+        addGestureRecognizer(currentTimeControlPanGesture)
         
         // Trimming gestures on the control heads
         leftSideControl.head.addGestureRecognizer(leftSideControlPanGesture)
