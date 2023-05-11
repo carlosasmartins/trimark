@@ -193,7 +193,6 @@
 		076A28052A097F0C00EB0C7C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				076A28522A0C5A3200EB0C7C /* MetalRenderer */,
 				076A28002A097DA300EB0C7C /* AppCoordinator */,
 				076A28102A09926000EB0C7C /* VideoPlayer */,
 				076A28192A0ABE0700EB0C7C /* TrimmingView */,
@@ -260,13 +259,6 @@
 				076A28292A0C267400EB0C7C /* VideoPlayer.Watermarking+MetalShaders.metal */,
 			);
 			path = Watermarking;
-			sourceTree = "<group>";
-		};
-		076A28522A0C5A3200EB0C7C /* MetalRenderer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MetalRenderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
