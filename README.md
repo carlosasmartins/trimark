@@ -21,7 +21,7 @@ A simple enough application that just trims one video!
 
 https://github.com/carlosasmartins/trimark/assets/6072464/57957e80-f674-40f5-878c-1ce8d7304335
 
-### How about that code, how do I navigate it?
+### 😌 How about that code, how do I navigate it?
 
 It alls starts at `AppDelegate`.
 
